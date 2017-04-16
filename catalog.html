@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <style>
+      .second_foto { display: none; }
+    </style>
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="header_container">
+        <nav class="main-navigation">
+          <a href="index.html"><img src="img/nerds_logo_bw.png" width="150" height="50"
+                alt="Нёрдс"></a>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+       </nav>
+       <div class="basket_block">
+         <a href="#">Корзина</a>
+       </div>
+      </div>
+        <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main class="main_container">
+      <p><b>Стоимость:</b></p>
+      <div class="range">
+        <div class="pointer_1"></div>
+        <div class="pointer_2"></div>
+        <div class="line"></div>
+      </div>
+      <table>
+        <tr>
+          <td>от</td>
+          <td>0</td>
+          <td>до</td>
+          <td>15 000</td>
+        <tr>
+      </table>
+      <form class="filter">
+        <p><b>Сетка:</b></p>
+        <br><input type="radio" name=grid value="adaptive"> Адаптивная
+        <br><input type="radio" name=grid value="fixed"> Фиксированная
+        <br><input type="radio" name=grid value="	liquid"> Резиновая
+        <br><p><b>Особенности:</b></p>
+        <br><input type="checkbox" name="slider" id="slider_chbx">
+        <label for="slider_chbx"> Слайдер</label>
+        <br><input type="checkbox" name="features_block" id="features_block_chbx">
+        <label for="features_block_chbx"> Блок преимуществ</label>
+        <br><input type="checkbox" name="news" id="news_chbx">
+        <label for="news_chbx"> Новости</label>
+        <br><input type="checkbox" name="galery" id="galery_chbx">
+        <label for="galery_chbx"> Галерея</label>
+        <br><input type="checkbox" name="basket" id="basket_chbx">
+        <label for="basket_chbx"> Корзина</label>
+      </form>
+      <br><p><button class="btn_grey" type="submit">Показать</button></p>
+      <div>
+        <p><b>Сетка:</b></p>
+        <table>
+          <tr>
+            <td>По цене</td>
+            <td>По типу</td>
+            <td>По названию</td>
+          </tr>
+        </table>
+        <img src="img/arrow_black">
+        <img src="img/arrow_grey">
+      </div>
+      <div class="catalog_fotos">
+          <div class="foto">
+            <img class="major_foto" src="img/sedona_m.png" alt="SEDONA" width="250" height="400">
+            <section class="second_foto">
+              <p><a href="#"><b>SEDONA</b></a></p>
+              <p>Информационный сайт для туристов</p>
+              <div class="btn_rose" >
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </section>
+          </div>
+        <div class="foto">
+          <img class="major_foto" src="img/pink_m.png" alt="PINK" width="250" height="400">
+          <!--<section class="second_foto">
+            <p><a href="#"><b>SEDONA</b></a></p>
+            <p>Информационный сайт для туристов</p>
+            <div class="btn_rose" >
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </section>-->
+        </div>
+        <div class="foto">
+          <img class="major_foto" src="img/borodinski_m.png" alt="BORODINSKI" width="250" height="400">
+          <!--<section class="second_foto">
+            <p><a href="#"><b>SEDONA</b></a></p>
+            <p>Информационный сайт для туристов</p>
+            <div class="btn_rose" >
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </section>-->
+        </div>
+        <div class="foto">
+          <img class="major_foto" src="img/mishka_m.png" alt="MISHKA" width="250" height="400">
+          <!--<section class="second_foto">
+            <p><a href="#"><b>SEDONA</b></a></p>
+            <p>Информационный сайт для туристов</p>
+            <div class="btn_rose" >
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </section>-->
+        </div>
+        <div class="foto">
+          <img class="major_foto" src="img/a_m.png" alt="A+" width="250" height="400">
+          <!--<section class="second_foto">
+            <p><a href="#"><b>SEDONA</b></a></p>
+            <p>Информационный сайт для туристов</p>
+            <div class="btn_rose" >
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </section>-->
+        </div>
+        <div class="foto">
+          <img class="major_foto" src="img/kbact_m.png" alt="KBACT" width="250" height="400">
+          <!--<section class="second_foto">
+            <p><a href="#"><b>SEDONA</b></a></p>
+            <p>Информационный сайт для туристов</p>
+            <div class="btn_rose" >
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </section>-->
+        </div>
+      </div>
+      <div class="pages">
+        <ul>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/map" alt="Местонахождение">
+      </div>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="promo">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
