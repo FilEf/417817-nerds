@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="header_container">
+      <div class="container">
         <nav class="main-navigation">
-          <img src="img/nerds_logo_bw.png" width="150" height="50"
-                alt="Нёрдс">
+          <a<img src="img/nerds_logo_bw.png" width="150" height="50"
+                alt="Нёрдс"></a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -28,14 +28,16 @@
        <div class="basket_block">
          <a href="#">Корзина</a>
        </div>
-       <div class="features_item">
-         <b class="features_name">Долго, дорого, скрупулезно</b>
-         <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
-         <a class="btn_rose" href="#">Узнать больше</a>
-       </div>
       </div>
     </header>
-    <main class="main_container">
+    <main class="container">
+      <div class="features_item">
+        <span class="features_name">Долго, дорого, скрупулезно</span>
+        <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
+        <div class="btn_rose" >
+          <a href="#">Узнать больше</a>
+        </div>
+      </div>
       <section class="advantage">
         <div class="advantage_item">
           <b class="advantage_name">Веб-сайты</b>
@@ -59,36 +61,39 @@
           </div>
         </div>
       </section>
-      <hr>
       <section class="about_us">
         <div class="description">
           <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара</h1>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыме креатива. Работаем не поладая рук, как роботы.</p>
           <h4>Выполняем заказы на разработку:</h4>
           <ul>
-            <li>Веб-сайтов любй сложности</li>
+            <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для IOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
+      </section>
+        <div class="slogan">
         <img src="img/nerds_logo_bw.png" width="200" height="100"
               alt="Нёрдс">
         <div class="statistics">
-          <table>
-            <caption><b>С 2004 года любим точность во всем:</b></caption>
-            <tr>
-              <th>146<sup>%</sup></th>
-              <th>100<sup>%</sup></th>
-              <th>50<sup>%</sup></th>
-            </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-          </table>
+          <b>С 2004 года любим точность во всем:</b>
+            <ul>
+              <li>
+                <span>146<sup>%</sup></span>
+                <p>Уровень самоотдачи</p>
+              </li>
+              <li>
+                <span>100<sup>%</sup></span>
+                <p>Соблюдение сроков</p>
+              </li>
+              <li>
+                <span>50<sup>%</sup></span>
+                <p>Минимальная предоплата</p>
+              </li>
+            </ul>
         </div>
-      </section>
+      </div>
       <table>
         <tr>
           <th><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/ha_logo"
@@ -101,12 +106,20 @@
             width="150" height="80" alt="MISHKA"></th>
         </tr>
       </table>
-      <div>
-        <img src="img/map" alt="Местонахождение">
-      </div>
     </main>
     <footer>
-      <div class="footer_container">
+      <div class="footer_contacts">
+        <div class="map"></div>
+        <div class="address_block">
+          <span>nёrds design studio</span>
+          <p>19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          тел. +7(812) 275-75-75</p>
+          <div class="btn_rose">
+            <a href="#">Напишите нам</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
