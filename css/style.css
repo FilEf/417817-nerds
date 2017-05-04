@@ -135,6 +135,8 @@ a {
 }
 
 .feature_slider {
+  width: 1160px;
+  padding: 0 10px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 17px;
@@ -145,7 +147,6 @@ a {
   display: inline-block;
   width: 359px;
   float: left;
-  margin-left: 140px;
   margin-right: 55px;
 }
 
@@ -370,20 +371,26 @@ a {
   max-width: 100%;
 }
 
+.footer_contacts {
+  width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .map {
   background-image: url(../img/map.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   padding-top: 54px;
   padding-bottom: 54px;
 }
 
 .address_block {
-  float: left;
   width: 270px;
   background-color: rgb(255,255,255);
   padding-left: 50px;
   padding-bottom: 47px;
-  margin-left: 140px;
+  margin-left: 138px;
   border: 1px solid transparent;
 
 }
