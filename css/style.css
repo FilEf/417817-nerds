@@ -12,7 +12,7 @@ body {
   display: table;
   clear: both;
 }
- 
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -132,57 +132,133 @@ a {
 .for_grey_index {
   background-color: rgb(238,238,238); 
   margin-bottom: 80px;   
-}
-
-.feature_slider {
-  width: 1160px;
-  padding: 0 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 17px;
-  margin-bottom: 26px;    
-}
-
-.features_item {
-  display: inline-block;
-  width: 359px;
-  float: left;
-  margin-right: 55px;
-}
-
-.feature_name {
-  font-size: 55px;
-  line-height: 55px;
-  margin-bottom: 0;
-}
-
-.feature_descr {
-  font-size: 16px;
-  color: rgb(40,49,54);
-  margin-bottom: 42px;
-  font-weight: normal;
-}
+} 
 
 .slider {
-  display: inline-block;    
-  width: 698px;
-  float: right;
-  margin-right: 41px;
-}
-
-.slider_img {
-  width: 698px;
+  position: relative;
   height: 413px;
+  margin: 0 auto;
 }
 
-.features_item .btn_rose {
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  top: 76%;
+  left: 53%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 10px;
+  background: white;
+  border: 2px solid white;
+  box-shadow: 0 0 0 5px white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    border: 2px solid rgb(193,193,193);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+  color: #283136;
+}
+
+.slide-title {
+  font-size: 55px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  line-height: 55px;
+  font-weight: bold;
+  color: black;
+}
+
+.slide p {
+  font-weight: normal;
+  color: rgb(40,49,54);
+  margin-bottom: 52px;
+}
+
+.slide .btn {
+  display: block;
   width: 240px;
-  height: 50px;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+  background-image: url('../img/slide1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(2) {
+  background-image: url('../img/slide2.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+  background-image: url('../img/slide3.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+  display: block;
 }
 
 .advantage {
   border-bottom: 2px solid rgb(238,238,238);
   padding-bottom: 70px;  
+  font-size: 0;
 }
 
 .advantage_item {
@@ -190,7 +266,7 @@ a {
   vertical-align: top;
   width: 300px;
   min-height: 347px;
-  margin-right: 96px;
+  margin-right: 100px;
   position: relative;
   font-size: 0;
 }
@@ -372,7 +448,6 @@ a {
 }
 
 .footer_contacts {
-  width: 1440px;
   text-align: center;
   margin: 0 auto;
 }
@@ -387,10 +462,10 @@ a {
 
 .address_block {
   width: 270px;
+  text-align: left;
   background-color: rgb(255,255,255);
   padding-left: 50px;
   padding-bottom: 47px;
-  margin-left: 138px;
   border: 1px solid transparent;
 
 }
@@ -431,39 +506,53 @@ a {
   width: 263px;
   margin-right: 139px;
   min-height: 217px;
-  margin-top: 69px;
-  position: relative;
+  padding-top: 69px;
 }
 
 .footer_social a {
   float: left;
-  position: relative;
+  width: 78px;
+  margin-right: 13px;
   text-indent: -6000px;
 }
 
+.footer_social a:last-child {
+  margin-right: 0;
+}
+
 .footer_social .social_btn {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
+  width: 78px;
+  height: 78px; 
 }
 
 .social_btn.vk {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: rgb(238,238,238);
   background-image: url(../img/icon_vk.png);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social_btn.fb {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: rgb(238,238,238);
   background-image: url(../img/icon_fb.png);
   background-repeat: no-repeat;
-  left: 92px;
+  background-position: center;
 }
 
 .social_btn.inst {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: rgb(238,238,238);
   background-image: url(../img/icon_inst.png);
   background-repeat: no-repeat;
-  left: 184px;
+  background-position: center;
 }
 
 .promo {
@@ -502,7 +591,6 @@ a {
 
 .filter {
   float: left;
-  display: inline-block;
   margin-right: 115px;
   width: 275px;
   padding-left: 0;
@@ -515,9 +603,9 @@ form {
 }
 
 form label {
-color: rgb(40,49,54);
-font-weight: normal;
-font-size: 16px;
+  color: rgb(40,49,54);
+  font-weight: normal;
+  font-size: 16px;
 }
 
 fieldset {
@@ -689,11 +777,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .sort {
-  margin-bottom: 54px;
+  margin-bottom: 79px;
 }
 
 .sort > div {
-  display: inline-block;
+  float: left;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -704,7 +792,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .grouping li {
-  display: inline-block;
+  list-style: none; 
+  float: left;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -761,11 +850,13 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .items {
+  font-size: 0;
   margin-bottom: 50px;
 }
 
 .item {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-top: 0;
   margin-right: 40px;
@@ -810,7 +901,6 @@ input[type="checkbox"]:checked + label:before {
   height: 15px;
   background-color: white;
   border-radius: 50%;
-
 }
 
 .major_photo {
@@ -856,6 +946,7 @@ input[type="checkbox"]:checked + label:before {
 
 .second_photo .btn_rose {
   position: relative;
+  font-size: 16px;
   left:80px;
   width: 200px;
   height: 50px;
@@ -878,6 +969,7 @@ input[type="checkbox"]:checked + label:before {
 
 .pagination li {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   margin-right: 11px;
   border-radius: 3px;
