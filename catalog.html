@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Нёрдс Каталог</title>
 </head>
@@ -95,9 +97,9 @@
           <button class="btn_grey" type="submit">Показать</button>
         </form>
         <div class="catalog">
-          <div class="sort">
+          <div class="sort clearfix">
             <div>Сортировать:</div>
-            <ul class="grouping">
+            <ul class="grouping clearfix">
               <li class="active_sort"><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
@@ -119,9 +121,7 @@
                 <section class="second_photo">
                   <p><a href="#">SEDONA</a></p>
                   <p>Информационный сайт для туристов</p>
-                  <div class="btn_rose">
-                    <a href="#">9 900 РУБ.</a>
-                  </div>
+                  <a class="btn_rose" href="#">9 900 РУБ.</a>
                 </section>
               </div>
             </div>
@@ -138,9 +138,7 @@
                 <section class="second_photo">
                   <p><a href="#">PINK APP</a></p>
                   <p>Продуктивный лендинг приложения для IOS и Android</p>
-                  <div class="btn_rose" >
-                    <a href="#">9 900 РУБ.</a>
-                  </div>
+                  <a class="btn_rose" href="#">9 900 РУБ.</a>
                 </section>
               </div>
             </div>
@@ -157,9 +155,7 @@
                 <section class="second_photo">
                   <p><a href="#">BARBERSHOP</a></p>
                   <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                  <div class="btn_rose" >
-                    <a href="#">9 900 РУБ.</a>
-                  </div>
+                  <a class="btn_rose" href="#">9 900 РУБ.</a>
                 </section>
               </div>
             </div>
@@ -176,9 +172,7 @@
                 <section class="second_photo">
                   <p><a href="#">MISHKA</a></p>
                   <p>Интернет-магазин вязаных игрушек</p>
-                  <div class="btn_rose" >
-                    <a href="#">9 900 РУБ.</a>
-                  </div>
+                  <a class="btn_rose" href="#">9 900 РУБ.</a>
                 </section>
               </div>
             </div>
@@ -195,9 +189,7 @@
                 <section class="second_photo">
                   <p><a href="#">A PLUS</a></p>
                   <p>Лендинг курсов повышения квалификации</p>
-                  <div class="btn_rose" >
-                    <a href="#">9 900 РУБ.</a>
-                  </div>
+                  <a class="btn_rose" href="#">9 900 РУБ.</a>
                 </section>
               </div>
             </div>
@@ -213,27 +205,17 @@
               <section class="second_photo">
                 <p><a href="#">KBACT</a></p>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <div class="btn_rose" >
-                  <a href="#">9 900 РУБ.</a>
-                </div>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
               </section>
             </div>
           </div>
         </div>
-        <ul class="pagination">
-          <li class="active_pagin">
-            <a>1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">Следующая</a>
-          </li>
-        </ul>
+        <div class="pagination">
+          <a class="active_pagin">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
       </div>
     </div>
   </main>
@@ -244,9 +226,7 @@
           <div class="address_block">
             <p class="name">nёrds design studio</p>
             <p class="address">19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
-            <div class="btn_rose">
-              <a href="#">Напишите нам</a>
-            </div>
+            <a class="btn_rose" href="#">Напишите нам</a>
           </div>
         </div>
           <!--<div class="pointer">
