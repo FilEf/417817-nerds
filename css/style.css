@@ -40,7 +40,7 @@ a {
 .btn_rose:active {
   background-color: rgb(215,55,59);
   color: rgba(255,255,255,0.3);
-  outline: 3px solid rgb(193,49,53);
+  box-shadow: inset 0 3px 2px;
 }
 
 .btn_green {
@@ -62,6 +62,7 @@ a {
 .btn_green:active {
   background-color: rgb(0,170,98);
   color: rgba(255,255,255,0.3);
+  box-shadow: inset 0 3px 2px;
 }
 
 .btn_yellow {
@@ -83,6 +84,7 @@ a {
 .btn_yellow:active {
   background-color: rgb(229,167,34);
   color: rgba(255,255,255,0.3);
+  box-shadow: inset 0 3px 2px;
 }
 
 .container {
@@ -145,13 +147,17 @@ a {
 
 .basket_block {
   float: right;
-  width: 180px; 
+  width: 110px; 
   height: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   text-align: right;
   padding-top: 75px;
+  position: relative;
+}
+
+.basket_block a {
   position: relative;
 }
 
@@ -163,8 +169,8 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 70%;
-  left: 35%;
+  top: 2px;
+  left: -36px;
 }
 
 .basket_block a {
@@ -200,7 +206,7 @@ a {
   opacity: 0;
 }
 
-.slider-controls {
+.slider_controls {
   position: absolute;
   bottom: 95px;
   top: 76%;
@@ -212,7 +218,7 @@ a {
   z-index: 1000;
 }
 
-.slider-controls label {
+.slider_controls label {
   display: inline-block;
   width: 4px;
   height: 4px;
@@ -225,9 +231,9 @@ a {
   cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+#btn_1:checked ~ .slider_controls label[for="btn_1"],
+#btn_2:checked ~ .slider_controls label[for="btn_2"],
+#btn_3:checked ~ .slider_controls label[for="btn_3"] { 
     border: 2px solid rgb(193,193,193);
 }
 
@@ -240,13 +246,14 @@ a {
   overflow: hidden;
 }
 
-.slide-text {
+.slide_text {
   width: 500px;
   padding: 30px 0;
   color: #283136;
 }
 
-.slide-title {
+.slide_title {
+  width: 600px;
   font-size: 55px;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -283,6 +290,7 @@ a {
 .slide .btn:active {
   background-color: rgb(215,55,59);
   color: rgba(255,255,255,0.3);
+  box-shadow: inset 0 3px 2px;
 }
 
 .slide:nth-child(1) {
@@ -307,15 +315,15 @@ a {
   display: none;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+#btn_1:checked ~ .slides .slide:nth-child(1) { 
   display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+#btn_2:checked ~ .slides .slide:nth-child(2) { 
   display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+#btn_3:checked ~ .slides .slide:nth-child(3) { 
   display: block;
 }
 
@@ -492,8 +500,8 @@ a {
 }
 
 .funders {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgb(238, 238, 238);
+  border-bottom: 2px solid rgb(238, 238, 238);
   margin: 0 auto 80px;
   font-size: 0;
   position: relative;
@@ -503,7 +511,6 @@ a {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  opacity: 0.2;
   width: 20%;
   margin: 3% 30px 2%;
 }
@@ -512,12 +519,20 @@ a {
   margin-right: 0;
 }
 
+.funder img {
+  opacity: 0.2;
+}
+
+.funders img {
+  max-width: 100%;
+}
+
 .funder::after {
   content: '';
   position: absolute;
   width: 2px;
   height: 52px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(238, 238, 238);
   top: 52px;
   margin-left: 4%;
 }
@@ -526,16 +541,12 @@ a {
   display: none;
 }
 
-.funder:hover {
+.funder img:hover {
   opacity: 1;
 }
 
-.funder:active {
+.funder img:active {
   opacity: 0.1;
-}
-
-.funders img {
-  max-width: 100%;
 }
 
 .footer_contacts {
@@ -623,8 +634,8 @@ a {
 }
 
 .footer_social .social_btn:active {
-  background-color: rgb(215,55,59); 
-  opacity: 0.3;
+  background-color: rgba(215,55,59, 1);
+  box-shadow: inset 0 3px 2px rgba(193,49,53,1);
 }
 
 .social_btn.vk {
@@ -821,6 +832,12 @@ form button:hover {
   background-color: rgb(223,223,223);
 }
 
+form button:active {
+  background-color: rgb(213,213,213); 
+  box-shadow: inset 0 3px 2px rgb(193,193,193);
+  color: rgba(0,0,0,0.3);
+}
+
 input[type="radio"] { display: none; }
 
 input[type="radio"] + label {
@@ -844,6 +861,11 @@ input[type="radio"] + label:before {
   top: 0;
   opacity: 0.4;
 }
+
+.grid label,
+.particularities label {
+  color: rgba(0,0,0,0.4);
+} 
 
 input[type="radio"]:checked + label:before {
   background-image: url(../img/radio_btn_on.png);
@@ -878,12 +900,21 @@ input[type="checkbox"]:checked + label:before {
   background-image: url(../img/checkbox_on.png);
 }
 
-input[type="radio"] + label:hover::before {
+input + label:hover::before {
   opacity: 1;
 }
 
-input[type="checkbox"] + label:hover::before {
-  opacity: 1;
+.grid label:hover,
+.particularities label:hover  {
+  color: rgba(0,0,0,1);
+}
+
+input[disabled] + label {
+  opacity: 0.16;
+}
+
+input[disabled]:hover + label {
+  opacity: 0.07;
 }
 
 .catalog {
@@ -1114,7 +1145,7 @@ input[type="checkbox"] + label:hover::before {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  min-width: 44px;
+  min-width: 50px;
   padding: 13px 0;
   margin-right: 11px;
   font-weight: 500;
@@ -1123,30 +1154,196 @@ input[type="checkbox"] + label:hover::before {
   color: black;
   text-transform: uppercase;
   background-color: rgb(238,238,238);
-  border: 3px solid rgb(238,238,238);
   border-radius: 3px;
   cursor: pointer;
 }
 
 .pagination a:last-child {
-  width: 254px;
-  border: 3px solid rgb(238,238,238);
+  width: 260px;
 }
 
 .pagination .active_pagin {
+  box-shadow: inset 3px 3px 0 rgb(238,238,238), inset -3px -3px 0 rgb(238,238,238);
   background-color: rgb(255,255,255);
+
 }
 
 .pagination a:hover {
+  box-shadow: inset 3px 3px 0 rgb(223,223,223), inset -3px -3px 0 rgb(223,223,223);
   background-color: rgb(223,223,223);
-  border: 3px solid rgb(223,223,223);
 }
 
 .pagination a:active {
-  background-color: rgb(213,213,213);
-  border-color: rgb(213,213,213);
+  background-color: rgb(213,213,213); 
+  box-shadow: inset 0 3px 2px rgb(193,193,193);
   color: rgba(0,0,0,0.3);
 }
+
+
+
+/*---------------------------------------------------Напишите нам---------------------------------------------------*/
+
+.modal_write {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-left: -480px;
+  width: 770px;
+  font-size: 0;
+  padding: 70px 100px 84px 100px;
+  color: black;
+  background-color: rgb(255,255,255);
+  box-shadow: 0 10px 50px;
+  z-index: 2000;
+  display: none;
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+.modal_write_close {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  width: 23px;
+  height: 23px;
+  font-size: inherit;
+  clip: rect(1px. 1px, 1px, 1px);
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal_write_close::before,
+.modal_write_close::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 9px;
+  width: 4px;
+  height: 27px;
+  background-color: rgb(254,204,205);
+  border-radius: 1px;
+}
+
+.modal_write_close::before {
+  transform: rotate(45deg);
+}
+
+.modal_write_close::after {
+  transform: rotate(-45deg);
+}
+
+.modal_write_close:hover::before,
+.modal_write_close:hover::after {
+  background-color: rgb(251,86,90);
+}
+
+.modal_write_close:active::before,
+.modal_write_close:active::after {
+  background-color: rgb(255,238,238);
+}
+
+.modal_write h2 {
+  margin-top: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.write_form {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.write_form input {
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid rgb(215,220,222);
+  border-radius: 3px;
+  outline: none;
+}
+
+.write_form div {
+  display: inline-block;
+}
+
+.write_form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.write_name input {
+  width: 329px;
+  height: 22px;
+  padding: 14px 16px;
+  margin-right: 40px;
+}
+
+.write_email input {
+  width: 329px;
+  height: 22px;
+  padding: 14px 16px;
+  margin-right: 0;
+}
+
+.write_msg {
+  margin-top: 36px;
+}
+
+.write_msg textarea {
+  width: 735px;
+  height: 90px;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 16px;
+  border: 2px solid rgb(215,220,222);
+  border-radius: 3px;
+  margin-bottom: 40px;
+  outline: none;
+}
+
+.write_form input:hover {
+  border-color: rgb(180,185,187);
+}
+
+.write_form textarea:hover {
+  border-color: rgb(180,185,187); 
+}
+
+.write_form input:focus {
+  border-color: rgb(0,0,0);
+}
+
+.write_form textarea:focus {
+  border-color: rgb(0,0,0); 
+}
+
+.write_form input:invalid {
+  border-color: rgb(231,66,70);
+  color: rgb(231,66,70);
+}
+
+.write_form textarea:invalid {
+  border-color: rgb(231,66,70);
+  color: rgb(231,66,70); 
+}
+
+
+
 
 
 
@@ -1300,4 +1497,5 @@ body > * > * > *::before {
 
 .footer-copyright::before {
   content: ".footer-copyright";
-}*/
+}
+*/
