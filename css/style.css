@@ -750,14 +750,13 @@ a {
 }
 
 .for_grey_catalog h1 {
-  height: 156px;
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   padding-top: 78px;
-  padding-bottom: 7px;
-  padding-left: 577px;
+  padding-bottom: 108px;
+  padding-right: 24px;
   margin: 0;
 }
 
@@ -800,7 +799,7 @@ legend {
   margin-right: 0;
 }
 
-.range-controls {
+.range_controls {
   position: relative;
   height: 41px;
   padding-top: 39px;
@@ -811,18 +810,18 @@ legend {
   background-color: rgb(238,238,238);
 }
 
-.range-controls .scale {
+.range_controls .scale {
   height: 2px;
   background: rgb(215,220,222);
 }
 
-.range-controls .bar {
+.range_controls .bar {
   width: 65%;
   height: 2px;
   background: rgb(0,202,116);
 }
 
-.range-controls .toggle {
+.range_controls .toggle {
   position: absolute;
   top: 30px;
   left: 0px;
@@ -835,11 +834,11 @@ legend {
   box-shadow: 0 2px 1px 0 rgb(207,207,207);
 }
 
-.range-controls .toggle-min {
+.range_controls .toggle_min {
   left: 18px;
 }
 
-.range-controls .toggle-max {
+.range_controls .toggle_max {
   left: 160px;
 }
 
@@ -851,7 +850,7 @@ legend {
   font-size: 16px;
   line-height: 22px;
   border-radius: 3px;
-  width: 80px;
+  width: 79px;
   height: 35px;
   margin-left: 8px;
   margin-right: 28px;
@@ -860,6 +859,7 @@ legend {
 
 .range_to {
   margin-right: 0;
+  margin-left: 6px;
 }
 
 .line .pointer_2{
