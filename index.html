@@ -154,7 +154,7 @@
   <div class="modal_write">
     <button class="modal_write_close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal_write_title">Напишите нам</h2>
-    <form class="write_form" action="" method="post">
+    <form class="write_form" method="post" id="write_us_form">
       <div class="write_name">
         <label for="write_name">Ваше имя:</label>
         <input type="text" name="name" id="write_name" placeholder="Представьтесь, пожалуйста">
@@ -165,7 +165,7 @@
       </div>
       <div class="write_msg">
         <label for="write_msg">Текс письма:</label>
-        <textarea rows="20" cols="45" name="msg" id="write_msg" placeholder="В свободной форме" form="write_form"></textarea>
+        <textarea rows="20" cols="45" name="msg" id="write_msg" placeholder="В свободной форме" form="write_us_form"></textarea>
       </div>
       <button class="btn_rose" type="submit">Отправить</button>
     </form>

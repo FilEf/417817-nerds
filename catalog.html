@@ -28,219 +28,216 @@
         </ul>
       </nav>
       <div class="basket_block">
-       <a href="#">Корзина</a>
-     </div>
-   </div>
- </header>
- <main class="main">
-  <div class="for_grey_catalog">
-    <h1>Магазин готовых шаблонов</h1>
-  </div>
-  <div class="container clearfix">
-    <form class="filter" action="form.php" method="GET">
-      <fieldset class="range">
-        <legend>Cтоимость:</legend>
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
+        <a href="#">Корзина</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="for_grey_catalog">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+    <div class="container clearfix">
+      <form class="filter" action="form.php" method="GET">
+        <fieldset class="range">
+          <legend>Cтоимость:</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
           </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+          <label for="from_value">ОТ</label>
+          <input class="range_from" type="text" name="range_from" value="0" id="from_value">
+          <label for="to_value">ДО</label>
+          <input class="range_to" type="text" name="range_to" value="15000" id="to_value">
+        </fieldset>
+        <fieldset class="grid">
+          <legend>Сетка:</legend>
+          <div class="input_lable">
+            <input type="radio" name=grid value="adaptive" id="adaptive_grid" checked>
+            <label for="adaptive_grid">Адаптивная</label>
+          </div>
+          <div class="input_lable">
+            <input type="radio" name=grid value="fixed" id="fixed_grid">
+            <label for="fixed_grid">Фиксированная</label>
+          </div>
+          <div class="input_lable">
+            <input type="radio" name=grid value="	liquid" id="liquid_grid">
+            <label for="liquid_grid">Резиновая</label>
+          </div>
+        </fieldset>
+        <fieldset class="particularities">
+          <legend>Особенности</legend>
+          <div class="input_lable">
+            <input type="checkbox" name="slider" id="slider_chbx" checked>
+            <label for="slider_chbx"> Слайдер</label>
+          </div>
+          <div class="input_lable">
+            <input type="checkbox" name="features_block" id="features_block_chbx">
+            <label for="features_block_chbx"> Блок преимуществ</label>
+          </div>
+          <div class="input_lable">
+            <input type="checkbox" name="news" id="news_chbx" checked>
+            <label for="news_chbx"> Новости</label>
+          </div>
+          <div class="input_lable">
+            <input type="checkbox" name="galery" id="galery_chbx">
+            <label for="galery_chbx"> Галерея</label>
+          </div>
+          <div class="input_lable">
+            <input type="checkbox" name="basket" id="basket_chbx">
+            <label for="basket_chbx"> Корзина</label>
+          </div>
+        </fieldset>
+        <button class="btn_grey" type="submit">Показать</button>
+      </form>
+      <div class="catalog">
+        <div class="sort clearfix">
+          <div>Сортировать:</div>
+          <ul class="grouping clearfix">
+            <li class="active_sort"><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li class="desc active_sort"><a href="#">По убыванию</a></li>
+            <li class="asc"><a href="#">По возрастанию</a></li>
+          </ul>
         </div>
-      <label for="from_value">ОТ</label>
-      <input class="range_from" type="text" name="range_from" value="0" id="from_value">
-      <label for="to_value">ДО</label>
-      <input class="range_to" type="text" name="range_to" value="15000" id="to_value">
-    </fieldset>
-    <fieldset class="grid">
-      <legend>Сетка:</legend>
-      <div class="input_lable">
-        <input type="radio" name=grid value="adaptive" id="adaptive_grid" checked>
-        <label for="adaptive_grid">Адаптивная</label>
+        <div class="items">
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>
+            <div>
+              <img class="major_photo" src="img/catalog_sedona.jpg" alt="SEDONA">
+              <section class="second_photo">
+                <p><a href="#">SEDONA</a></p>
+                <p>Информационный сайт<br>для туристов</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>
+            <div>
+              <img class="major_photo" src="img/catalog_pink.jpg" alt="PINK">
+              <section class="second_photo">
+                <p><a href="#">PINK APP</a></p>
+                <p>Продуктивный лендинг приложения для IOS и Android</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>
+            <div>
+              <img class="major_photo" src="img/catalog_b-shop.jpg" alt="BORODINSKI">
+              <section class="second_photo">
+                <p><a href="#">BARBERSHOP</a></p>
+                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>
+            <div>
+              <img class="major_photo" src="img/catalog_mishka.jpg" alt="MISHKA">
+              <section class="second_photo">
+                <p><a href="#">MISHKA</a></p>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>
+            <div>
+              <img class="major_photo" src="img/catalog_aplus.jpg" alt="A+">
+              <section class="second_photo">
+                <p><a href="#">A PLUS</a></p>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+          <div class="item">
+            <div class="browser">
+              <ul class="circles">
+                <li>circle_1</li>
+                <li>circle_2</li>
+                <li>circle_3</li>
+              </ul>
+            </div>              <div>
+              <img class="major_photo" src="img/catalog_kvast.jpg" alt="KBACT">
+              <section class="second_photo">
+                <p><a href="#">KBACT</a></p>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="btn_rose" href="#">9 900 РУБ.</a>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="active_pagin">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
       </div>
-      <div class="input_lable">
-        <input type="radio" name=grid value="fixed" id="fixed_grid">
-        <label for="fixed_grid">Фиксированная</label>
-      </div>
-      <div class="input_lable">
-        <input type="radio" name=grid value="	liquid" id="liquid_grid">
-        <label for="liquid_grid">Резиновая</label>
-      </div>
-    </fieldset>
-    <fieldset class="particularities">
-      <legend>Особенности</legend>
-      <div class="input_lable">
-        <input type="checkbox" name="slider" id="slider_chbx" checked>
-        <label for="slider_chbx"> Слайдер</label>
-      </div>
-      <div class="input_lable">
-        <input type="checkbox" name="features_block" id="features_block_chbx">
-        <label for="features_block_chbx"> Блок преимуществ</label>
-      </div>
-      <div class="input_lable">
-        <input type="checkbox" name="news" id="news_chbx" checked>
-        <label for="news_chbx"> Новости</label>
-      </div>
-      <div class="input_lable">
-        <input type="checkbox" name="galery" id="galery_chbx">
-        <label for="galery_chbx"> Галерея</label>
-      </div>
-      <div class="input_lable">
-        <input type="checkbox" name="basket" id="basket_chbx">
-        <label for="basket_chbx"> Корзина</label>
-      </div>
-    </fieldset>
-    <button class="btn_grey" type="submit">Показать</button>
-  </form>
-  <div class="catalog">
-    <div class="sort clearfix">
-      <div>Сортировать:</div>
-      <ul class="grouping clearfix">
-        <li class="active_sort"><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-        <li class="desc active_sort"><a href="#">По убыванию</span></a></li>
-        <li class="asc"><a href="#">По возрастанию</a></li>
-      </ul>
     </div>
-    <div class="items">
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
+  </main>
+  <footer>
+    <div class="footer_contacts">
+      <div class="map clearfix">
+        <div class="address_block_background container">
+          <div class="address_block">
+            <p class="name">nёrds design studio</p>
+            <p class="address">19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
+            <a class="btn_rose" href="#">Напишите нам</a>
+          </div>
         </div>
-        <div>
-          <img class="major_photo" src="img/catalog_sedona.jpg" alt="SEDONA">
-          <section class="second_photo">
-            <p><a href="#">SEDONA</a></p>
-            <p>Информационный сайт для туристов</p>
-            <a class="btn_rose" href="#">9 900 РУБ.</a>
-          </section>
-        </div>
-      </div>
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
-        </div>
-        <div>
-          <img class="major_photo" src="img/catalog_pink.jpg" alt="PINK">
-          <section class="second_photo">
-            <p><a href="#">PINK APP</a></p>
-            <p>Продуктивный лендинг приложения для IOS и Android</p>
-            <a class="btn_rose" href="#">9 900 РУБ.</a>
-          </section>
-        </div>
-      </div>
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
-        </div>
-        <div>
-          <img class="major_photo" src="img/catalog_b-shop.jpg" alt="BORODINSKI">
-          <section class="second_photo">
-            <p><a href="#">BARBERSHOP</a></p>
-            <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-            <a class="btn_rose" href="#">9 900 РУБ.</a>
-          </section>
-        </div>
-      </div>
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
-        </div>
-        <div>
-          <img class="major_photo" src="img/catalog_mishka.jpg" alt="MISHKA">
-          <section class="second_photo">
-            <p><a href="#">MISHKA</a></p>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="btn_rose" href="#">9 900 РУБ.</a>
-          </section>
-        </div>
-      </div>
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
-        </div>
-        <div>
-          <img class="major_photo" src="img/catalog_aplus.jpg" alt="A+">
-          <section class="second_photo">
-            <p><a href="#">A PLUS</a></p>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="btn_rose" href="#">9 900 РУБ.</a>
-          </section>
-        </div>
-      </div>
-      <div class="item">
-        <div class="browser">
-          <ul class="circles">
-            <li>circle_1</li>
-            <li>circle_2</li>
-            <li>circle_3</li>
-          </ul>
-        </div>              <div>
-        <img class="major_photo" src="img/catalog_kvast.jpg" alt="KBACT">
-        <section class="second_photo">
-          <p><a href="#">KBACT</a></p>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a class="btn_rose" href="#">9 900 РУБ.</a>
-        </section>
       </div>
     </div>
-  </div>
-  <div class="pagination">
-    <a class="active_pagin">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">Следующая</a>
-  </div>
-</div>
-</div>
-</main>
-<footer>
-  <div class="footer_contacts">
-    <div class="map clearfix">
-      <div class="address_block_background container">
-        <div class="address_block">
-          <p class="name">nёrds design studio</p>
-          <p class="address">19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
-          <a class="btn_rose" href="#">Напишите нам</a>
-        </div>
-      </div>
-          <!--<div class="pointer">
-            <img src="img/map_pointer.png" alt="here">
-          </div>-->
-        </div>
-      </div>
-      <div class="container clearfix">
-        <section class="footer_social clearfix">
-          <a class="social_btn vk" href="#">Вконтакте</a>
-          <a class="social_btn fb" href="#">Фейсбук</a>
-          <a class="social_btn inst" href="#">Инстаграм</a>
-        </section>
-        <section class="promo">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
-      </div>
-    </footer>
-  </body>
-  </html>
+    <div class="container clearfix">
+      <section class="footer_social clearfix">
+        <a class="social_btn vk" href="#">Вконтакте</a>
+        <a class="social_btn fb" href="#">Фейсбук</a>
+        <a class="social_btn inst" href="#">Инстаграм</a>
+      </section>
+      <section class="promo">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
