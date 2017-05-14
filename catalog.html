@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Нёрдс Каталог</title>
 </head>
 <body>
@@ -113,7 +113,7 @@
               </ul>
             </div>
             <div>
-              <img class="major_photo" src="img/catalog_sedona.jpg" alt="SEDONA">
+              <img class="major_photo" src="img/catalog_sedona.jpg" width="360" height="576" alt="SEDONA">
               <section class="second_photo">
                 <p><a href="#">SEDONA</a></p>
                 <p>Информационный сайт<br>для туристов</p>
@@ -130,7 +130,7 @@
               </ul>
             </div>
             <div>
-              <img class="major_photo" src="img/catalog_pink.jpg" alt="PINK">
+              <img class="major_photo" src="img/catalog_pink.jpg" width="360" height="576" alt="PINK">
               <section class="second_photo">
                 <p><a href="#">PINK APP</a></p>
                 <p>Продуктивный лендинг приложения для IOS и Android</p>
@@ -147,7 +147,7 @@
               </ul>
             </div>
             <div>
-              <img class="major_photo" src="img/catalog_b-shop.jpg" alt="BORODINSKI">
+              <img class="major_photo" src="img/catalog_b-shop.jpg" width="360" height="576" alt="BORODINSKI">
               <section class="second_photo">
                 <p><a href="#">BARBERSHOP</a></p>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
@@ -164,7 +164,7 @@
               </ul>
             </div>
             <div>
-              <img class="major_photo" src="img/catalog_mishka.jpg" alt="MISHKA">
+              <img class="major_photo" src="img/catalog_mishka.jpg" width="360" height="576" alt="MISHKA">
               <section class="second_photo">
                 <p><a href="#">MISHKA</a></p>
                 <p>Интернет-магазин вязаных игрушек</p>
@@ -181,7 +181,7 @@
               </ul>
             </div>
             <div>
-              <img class="major_photo" src="img/catalog_aplus.jpg" alt="A+">
+              <img class="major_photo" src="img/catalog_aplus.jpg" width="360" height="576" alt="A+">
               <section class="second_photo">
                 <p><a href="#">A PLUS</a></p>
                 <p>Лендинг курсов повышения квалификации</p>
@@ -196,14 +196,13 @@
                 <li>circle_2</li>
                 <li>circle_3</li>
               </ul>
-            </div>              <div>
-              <img class="major_photo" src="img/catalog_kvast.jpg" alt="KBACT">
-              <section class="second_photo">
-                <p><a href="#">KBACT</a></p>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="btn_rose" href="#">9 900 РУБ.</a>
-              </section>
             </div>
+            <img class="major_photo" src="img/catalog_kvast.jpg" width="360" height="576" alt="KBACT">
+            <section class="second_photo">
+              <p><a href="#">KBACT</a></p>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a class="btn_rose" href="#">9 900 РУБ.</a>
+            </section>
           </div>
         </div>
         <div class="pagination">
@@ -222,7 +221,7 @@
           <div class="address_block">
             <p class="name">nёrds design studio</p>
             <p class="address">19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
-            <a class="btn_rose" href="#">Напишите нам</a>
+            <a class="btn_rose" href="writeus.html">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -239,5 +238,25 @@
       </section>
     </div>
   </footer>
+  <div class="modal_write">
+    <button class="modal_write_close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal_write_title">Напишите нам</h2>
+    <form class="write_form" method="post" id="write_us_form">
+      <div class="write_name">
+        <label for="write_name">Ваше имя:</label>
+        <input type="text" name="name" id="write_name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="write_email">
+        <label for="write_email">Ваш e-mail:</label>
+        <input type="email" name="email" id="write_email" placeholder="Для отправки ответа">
+      </div>
+      <div class="write_msg">
+        <label for="write_msg">Текс письма:</label>
+        <textarea rows="20" cols="45" name="msg" id="write_msg" placeholder="В свободной форме" form="write_us_form"></textarea>
+      </div>
+      <button class="btn_rose" type="submit">Отправить</button>
+    </form>
+  </div>
+  <div class="modal_overlay"></div>
 </body>
 </html>
