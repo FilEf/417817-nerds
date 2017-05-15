@@ -10,8 +10,8 @@
 <body>
   <header class="main_header">
     <div class="container clearfix">
-      <nav class="main_navigation">
-        <a href="index.html"><img class="logo_bw" src="img/logo_nerds_bw.png" width="160" height="65" alt="Нёрдс"></a>
+      <a href="index.html"><img class="logo_bw" src="img/logo_nerds_bw.png" width="160" height="65" alt="Нёрдс"></a>
+      <nav class="main_navigation clearfix">
         <ul class="clearfix">
           <li>
             <a href="#">Студия</a>
@@ -217,11 +217,12 @@
   <footer>
     <div class="footer_contacts">
       <div class="map clearfix">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5835569487933!2d30.32109846408475!3d59.939052149216415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494862894671" allowfullscreen></iframe>
         <div class="address_block_background container">
           <div class="address_block">
             <p class="name">nёrds design studio</p>
-            <p class="address">19186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
-            <a class="btn_rose" href="writeus.html">Напишите нам</a>
+            <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7(812) 275-75-75</span></p>
+            <a class="writeus_btn btn_rose" href="writeus.html">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -244,11 +245,11 @@
     <form class="write_form" method="post" id="write_us_form">
       <div class="write_name">
         <label for="write_name">Ваше имя:</label>
-        <input type="text" name="name" id="write_name" placeholder="Представьтесь, пожалуйста">
+        <input type="text" name="name" id="write_name" placeholder="Представьтесь, пожалуйста" required>
       </div>
       <div class="write_email">
         <label for="write_email">Ваш e-mail:</label>
-        <input type="email" name="email" id="write_email" placeholder="Для отправки ответа">
+        <input type="email" name="email" id="write_email" placeholder="Для отправки ответа" required>
       </div>
       <div class="write_msg">
         <label for="write_msg">Текс письма:</label>
@@ -258,5 +259,6 @@
     </form>
   </div>
   <div class="modal_overlay"></div>
+  <script src="js/writeus.min.js"></script>
 </body>
 </html>
